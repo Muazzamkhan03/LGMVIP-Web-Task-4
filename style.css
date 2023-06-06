@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=gigigitggghdjdjd&display=swap');
 
 :root{
-    --background : #191b28;
-    --answer : #dcdbe1;
-    --btn-special : #b85f83;
-    --btn : #b373e1;
+    --background : #181b28;
+    --answer : #DCDBE1;
+    --btn-special : #E94364;
+    --btn : #652D8F;
     --text: #000000;
     --btn-text : #ffffff;
     --active : #e5e5e5;
-
 }
 
 body {
