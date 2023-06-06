@@ -1,17 +1,25 @@
-// This function clear all the values
-function clearScreen() {
+// Functions 
+
+const clear = () => {
     document.getElementById("result").value = "";
 }
 
-
-// This function display values
-function display(value) {
+const display = (value) => {
     document.getElementById("result").value += value;
 }
 
-// This function evaluates the expression and return result
-function calculate() {
-    var p = document.getElementById("result").value;
-    var q = eval(p);
-    document.getElementById("result").value = q;
+const calculate = () => {
+    document.getElementById("result").value = eval(document.getElementById("result").value);
 }
+
+// Event Listeners 
+
+Array.from(document.querySelectorAll('.valBtn')).forEach((element) => {
+    element.addEventListener('click',(e) => {
+        display(e.target.value);
+    })
+})
+
+document.querySelector("#equal").addEventListener('click', calculate);
+
+document.querySelector('#clear').addEventListener('click', clear);
